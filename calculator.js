@@ -82,7 +82,7 @@ app.post("/division", function (req,  res) {
     res.send(`<h1>${num1} / ${num2} = ${result}</h1>`)
 })
 
-
-app.listen(9000, function () {
+port = process.env.PORT || 3000
+app.listen(port, function () {
     console.log("server running on port 9000");
 })
