@@ -45,7 +45,7 @@ app.get("/division", function(req, res) {
 app.post("/bmiCalculator", function (req,  res) {
     var weight = Number(req.body.weight);
     var height = Number(req.body.height);
-    var result = weight + height
+    var result = weight / (height*height)
 
     res.send(`<h1>the BMI result is: ${result}</h2>`)
 })
